@@ -89,6 +89,7 @@ body {
 
 .button-container {
     width: 300px;
+    margin-top: 20px;
     justify-content: center;
 }
 
@@ -144,19 +145,127 @@ ul {
 
 /* Botão de sortear título */
 .button-draw {
-    display: flex;
-    align-items: center;
+    display: flex;               /* Alinha o texto centralizado */
+    align-items: center;         /* Alinha verticalmente o texto */
+    justify-content: center;     /* Garante que o conteúdo (texto) fique centralizado */
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
     font-size: 16px;
+    border: none;                /* Remover borda */
+    border-radius: 25px;         /* Arredondar os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra aos botões */
+    cursor: pointer;            /* Adiciona cursor pointer para o botão */
 }
 
-.button-draw img {
-    margin-right: 40px;
+/* Botão Sorteio em Massa */
+#sorteioMassaButton {
+    background-color: var(--color-primary);  /* Cor azul para o sorteio em massa */
+    color: var(--color-white);               /* Cor do texto branca */
+}
+
+#sorteioMassaButton:hover {
+    background-color: #3f5eb1;  /* Cor mais escura quando o botão for hover */
+}
+
+/* Botão Sorteio Individual */
+#sorteioIndividualButton {
+    background-color: var(--color-button); /* Cor laranja para o sorteio individual */
+    color: var(--color-white);             /* Cor do texto branca */
+}
+
+#sorteioIndividualButton:hover {
+    background-color: var(--color-button-hover); /* Cor mais escura quando o botão for hover */
+}
+
+.button-draw span {
+    white-space: nowrap;         /* Impede que o texto quebre para a linha seguinte */
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para os campos de input */
+.input-name, .input-phone {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Ajustando o tamanho do campo de telefone para ser suficiente para o formato */
+.input-phone {
+    width: 170px; /* Ajuste para o tamanho do telefone (XX) XXXXX-XXXX */
+}
+
+/* Estilo para a tabela de participantes */
+.participants-table {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+/* Alinhamento centralizado das células */
+.participants-table th, .participants-table td {
+    padding: 10px;
+    text-align: center;  /* Alinha o conteúdo ao centro */
+    border: 1px solid #ddd;
+}
+
+/* Ajustando a largura da coluna de telefone */
+.participants-table td:nth-child(2) {
+    width: 170px; /* Definindo a largura suficiente para o telefone formatado */
+}
+
+/* Estilo da coluna de ações para ocupar o mínimo necessário */
+.participants-table td:last-child {
+    width: 100px; /* Largura suficiente para o botão */
+    padding: 0;   /* Retira o padding extra */
+}
+
+/* Estilo para o cabeçalho da tabela */
+.participants-table th {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o botão de remover */
+button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.1);
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    transform: scale(0.95);
+}
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }

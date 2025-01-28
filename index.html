@@ -18,21 +18,59 @@
         </header>
         
         <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <h2 class="section-title">Digite o nome e telefone dos seus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                <input type="text" id="telefone" class="input-phone" placeholder="(99) 99999-9999" maxlength="15" oninput="aplicarMascaraTelefone(this)">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
             </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+            <!-- Tabela para exibição dos participantes -->
+            <table id="participantesTable" class="participants-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody id="listaParticipantes">
+                    <!-- Participantes serão listados aqui -->
+                </tbody>
+            </table>
+
+            <div class="input-wrapper">
+                <label>
+                    <input type="checkbox" id="tipoSorteio" onchange="toggleSorteioTipo()" checked> Sorteio em massa
+                </label>
+            </div>
+            
+            <!-- Dropdown para selecionar o sorteador (aparece apenas no sorteio 1 a 1) -->
+            <div class="input-wrapper" id="dropdownWrapper" style="display:none;">
+                <select id="sorteador" class="input-name">
+                    <option value="" disabled selected>Escolha o sorteador</option>
+                </select>
+            </div>
+
+            <!-- Resultado do sorteio -->
+            <div class="result-list" id="resultado">
+                <!-- Nome sorteado será exibido aqui -->
+            </div>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
-                    Sortear amigo
+                <button id="sorteioIndividualButton" class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    Sortear Amigo
+                </button>
+            
+                <button id="sorteioMassaButton" class="button-draw" onclick="sortearEmMassa()" aria-label="Sortear amigos secreto">
+                    Sortear Todos
                 </button>
             </div>
+            
+
+            <!-- Lista de Sorteios -->
+            <ul id="sorteiosList" class="name-list" aria-live="polite"></ul>
+
         </section>
     </main>
 
