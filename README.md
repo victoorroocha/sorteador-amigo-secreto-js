@@ -99,4 +99,4 @@ Ao carregar a página, o sistema estará pronto para adicionar participantes, re
 
 ## Conclusão
 
-Esse sistema é uma forma prática e divertida de realizar sorteios de amigo secreto, seja de forma individual ou em massa. Ele também oferece a possibilidade de enviar os resultados via WhatsApp, tornando o processo ainda mais dinâmico e interativo.
+Esse sistema é uma forma prática e divertida de realizar sorteios de amigo secreto, seja de forma individual ou em massa. Ele também oferece a possibilidade de enviar os resultados via WhatsApp (ainda em fase de implementação), tornando o processo ainda mais dinâmico e interativo.
