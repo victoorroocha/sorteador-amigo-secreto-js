@@ -237,8 +237,6 @@ function limparSorteiosEParticipantes() {
         atualizarDropdown();
     }
 }
-
-
 function atualizarDropdown() {
     const dropdown = document.getElementById('sorteador');
     
