@@ -10,7 +10,7 @@ O sistema de Amigo Secreto permite que você adicione participantes e realize so
 - **Seleção de Sorteador**: Em sorteios individuais, é possível selecionar um sorteador específico.
 - **Sorteio Individual**: Ao realizar o sorteio de um amigo secreto individual, o sistema sorteia um participante aleatório para cada sorteador.
 - **Sorteio em Massa**: Realiza o sorteio para todos os participantes de uma vez, evitando autossorteio e duplicatas.
-- **Envio de Resultados via WhatsApp**: Após a conclusão do sorteio, o sistema envia mensagens via WhatsApp com o resultado para cada participante (A função está configurada para integração com a API do Twilio, mas não está implementada diretamente).
+- **Envio de Resultados via WhatsApp (em desenvolvimento)**: Após a conclusão do sorteio, o sistema envia mensagens via WhatsApp com o resultado para cada participante (A função está configurada para integração com a API do Twilio, mas não está implementada diretamente).
 
 ## Como Funciona
 
@@ -71,7 +71,7 @@ function sortearEmMassa() {
 }
 ```
 
-### Envio de Resultados
+### Envio de Resultados (em desenvolvimento)
 Após o sorteio, envia uma mensagem via WhatsApp para cada participante com o nome do seu amigo secreto.
 
 ```js
@@ -99,4 +99,4 @@ Ao carregar a página, o sistema estará pronto para adicionar participantes, re
 
 ## Conclusão
 
-Esse sistema é uma forma prática e divertida de realizar sorteios de amigo secreto, seja de forma individual ou em massa. Ele também oferece a possibilidade de enviar os resultados via WhatsApp, tornando o processo ainda mais dinâmico e interativo.
+Esse sistema é uma forma prática e divertida de realizar sorteios de amigo secreto, seja de forma individual ou em massa. Ele também oferece a possibilidade de enviar os resultados via WhatsApp (em desenvolvimento), tornando o processo ainda mais dinâmico e interativo.
