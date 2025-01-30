@@ -1,0 +1,22 @@
+{
+  "name": "sorteador-amigo-secreto",
+  "version": "1.0.0",
+  "description": "O sistema de Amigo Secreto permite que você adicione participantes e realize sorteios para determinar quem vai tirar quem no amigo secreto. É possível escolher entre realizar o sorteio de forma individual (um participante por vez) ou em massa (todos de uma vez).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoorroocha/sorteador-amigo-secreto-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoorroocha/sorteador-amigo-secreto-js/issues"
+  },
+  "homepage": "https://github.com/victoorroocha/sorteador-amigo-secreto-js#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
